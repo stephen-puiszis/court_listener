@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://spuiszis:password123%21@www.courtlistener.com/api/rest/v1/search/schema/?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.courtlistener.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Oct 2014 00:40:07 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Expires:
+      - Thu, 09 Oct 2014 00:50:07 GMT
+      Vary:
+      - Accept
+      Cache-Control:
+      - no-cache, max-age=600
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      Last-Modified:
+      - Thu, 09 Oct 2014 00:40:07 GMT
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"allowed_detail_http_methods": ["get"], "allowed_list_http_methods":
+        ["get"], "default_format": "application/json", "default_limit": 20, "fields":
+        {"absolute_url": {"blank": false, "default": "No default provided.", "help_text":
+        "The URL on CourtListener for the item.", "nullable": true, "readonly": false,
+        "type": "string", "unique": false}, "case_name": {"blank": false, "default":
+        "No default provided.", "help_text": "The full name of the case", "nullable":
+        true, "readonly": false, "type": "string", "unique": false}, "case_number":
+        {"blank": false, "default": "No default provided.", "help_text": "The combination
+        of the citation and the docket number.", "nullable": true, "readonly": false,
+        "type": "string", "unique": false}, "citation": {"blank": false, "default":
+        "No default provided.", "help_text": "A concatenated list of all the citations
+        for an opinion.", "nullable": true, "readonly": false, "type": "string", "unique":
+        false}, "cite_count": {"blank": false, "default": "No default provided.",
+        "help_text": "The number of times this document is cited by other cases",
+        "nullable": false, "readonly": false, "type": "integer", "unique": false},
+        "court": {"blank": false, "default": "No default provided.", "help_text":
+        "The name of the court where the document was filed", "nullable": true, "readonly":
+        false, "type": "string", "unique": false}, "court_id": {"blank": false, "default":
+        "No default provided.", "help_text": "The court where the document was filed",
+        "nullable": true, "readonly": false, "type": "string", "unique": false}, "date_filed":
+        {"blank": false, "default": "No default provided.", "help_text": "The date
+        filed by the court", "nullable": true, "readonly": false, "type": "date",
+        "unique": false}, "docket_number": {"blank": false, "default": "No default
+        provided.", "help_text": "The docket numbers of a case, can be consolidated
+        and quite long", "nullable": true, "readonly": false, "type": "string", "unique":
+        false}, "download_url": {"blank": false, "default": "No default provided.",
+        "help_text": "The URL on the court website where the document was originally
+        scraped", "nullable": true, "readonly": false, "type": "string", "unique":
+        false}, "id": {"blank": false, "default": "No default provided.", "help_text":
+        "The primary key for an opinion.", "nullable": false, "readonly": false, "type":
+        "string", "unique": false}, "judge": {"blank": false, "default": "No default
+        provided.", "help_text": "The judges that brought the opinion as a simple
+        text string", "nullable": true, "readonly": false, "type": "string", "unique":
+        false}, "local_path": {"blank": false, "default": "No default provided.",
+        "help_text": "The location, relative to MEDIA_ROOT on the CourtListener server,
+        where files are stored", "nullable": true, "readonly": false, "type": "string",
+        "unique": false}, "resource_uri": {"blank": false, "default": "No default
+        provided.", "help_text": "Unicode string data. Ex: \"Hello World\"", "nullable":
+        false, "readonly": true, "type": "string", "unique": false}, "score": {"blank":
+        false, "default": "No default provided.", "help_text": "The relevance of the
+        result. Will vary from query to query.", "nullable": false, "readonly": false,
+        "type": "float", "unique": false}, "snippet": {"blank": false, "default":
+        "No default provided.", "help_text": "a snippet as found in search results,
+        utilizing <mark> for highlighting and &hellip; for ellipses", "nullable":
+        true, "readonly": false, "type": "string", "unique": false}, "source": {"blank":
+        false, "default": "No default provided.", "help_text": "the source of the
+        document, one of: C (court website), R (resource.org), CR (court website merged
+        with resource.org), L (lawbox), LC (lawbox merged with court), LR (lawbox
+        merged with resource.org), LCR (lawbox merged with court and resource.org),
+        M (manual input), A (internet archive)", "nullable": true, "readonly": false,
+        "type": "string", "unique": false}, "status": {"blank": false, "default":
+        "No default provided.", "help_text": "The precedential status of document,
+        one of: stat_Precedential, stat_Non-Precedential, stat_Errata, stat_Memorandum+Decision,
+        stat_Per+Curiam+Opinion, stat_Separate+Opinion, stat_Signed+Opinion, stat_In-chambers,
+        stat_Relating-to+orders, stat_Unknown+Status", "nullable": true, "readonly":
+        false, "type": "string", "unique": false}, "suit_nature": {"blank": false,
+        "default": "No default provided.", "help_text": "The nature of the suit. For
+        the moment can be codes or laws or whatever", "nullable": true, "readonly":
+        false, "type": "string", "unique": false}, "text": {"blank": false, "default":
+        "No default provided.", "help_text": "A concatenated copy of most fields in
+        the item so those fields are available for search.", "nullable": false, "readonly":
+        false, "type": "string", "unique": false}, "timestamp": {"blank": false, "default":
+        "No default provided.", "help_text": "The moment when an item was indexed
+        by Solr.", "nullable": false, "readonly": false, "type": "date", "unique":
+        false}}, "filtering": {"case_name": ["search"], "citation": ["search"], "cited_gt":
+        ["int"], "cited_lt": ["int"], "court": ["csv"], "docket_number": ["search"],
+        "filed_after": ["date"], "filed_before": ["date"], "judge": ["search"], "neutral_cite":
+        ["search"], "q": ["search"], "stat_": ["boolean"]}, "ordering": ["dateFiled+desc",
+        "dateFiled+asc", "citeCount+desc", "citeCount+asc", "score+desc"]}'
+    http_version: 
+  recorded_at: Thu, 09 Oct 2014 00:40:24 GMT
+recorded_with: VCR 2.9.2

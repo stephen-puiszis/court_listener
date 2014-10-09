@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://spuiszis:password123%21@www.courtlistener.com/api/rest/v1/jurisdiction/schema/?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.courtlistener.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Oct 2014 00:40:24 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Expires:
+      - Thu, 09 Oct 2014 00:50:21 GMT
+      Vary:
+      - Accept
+      Cache-Control:
+      - no-cache, max-age=600
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      Last-Modified:
+      - Thu, 09 Oct 2014 00:40:21 GMT
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"allowed_detail_http_methods": ["get"], "allowed_list_http_methods":
+        ["get"], "default_format": "application/json", "default_limit": 20, "fields":
+        {"citation_string": {"blank": true, "default": "", "help_text": "the citation
+        abbreviation for the court as dictated by Blue Book", "nullable": false, "readonly":
+        false, "type": "string", "unique": false}, "date_modified": {"blank": false,
+        "default": true, "help_text": "The last moment when the item was modified",
+        "nullable": true, "readonly": false, "type": "datetime", "unique": false},
+        "end_date": {"blank": false, "default": "No default provided.", "help_text":
+        "the date the court was abolished, if known", "nullable": true, "readonly":
+        false, "type": "datetime", "unique": false}, "full_name": {"blank": false,
+        "default": "No default provided.", "help_text": "the full name of the court",
+        "nullable": false, "readonly": false, "type": "string", "unique": false},
+        "has_scraper": {"blank": true, "default": false, "help_text": "Whether the
+        jurisdiction has a scraper that obtains opinions automatically.", "nullable":
+        false, "readonly": false, "type": "boolean", "unique": false}, "id": {"blank":
+        false, "default": "No default provided.", "help_text": "a unique ID for each
+        court as used in URLs", "nullable": false, "readonly": false, "type": "string",
+        "unique": true}, "in_use": {"blank": true, "default": false, "help_text":
+        "Whether this jurisdiction is in use in CourtListener -- increasingly True",
+        "nullable": false, "readonly": false, "type": "boolean", "unique": false},
+        "jurisdiction": {"blank": false, "default": "No default provided.", "help_text":
+        "the jurisdiction of the court, one of: F (Federal Appellate), FD (Federal
+        District), FB (Federal Bankruptcy), FBP (Federal Bankruptcy Panel), FS (Federal
+        Special), S (State Supreme), SA (State Appellate), SS (State Special), C (Committee),
+        T (Testing)", "nullable": false, "readonly": false, "type": "string", "unique":
+        false}, "notes": {"blank": true, "default": "", "help_text": "any notes about
+        coverage or anything else (currently very raw)", "nullable": false, "readonly":
+        false, "type": "string", "unique": false}, "position": {"blank": false, "default":
+        "No default provided.", "help_text": "A dewey-decimal-style numeral indicating
+        a hierarchical ordering of jurisdictions", "nullable": true, "readonly": false,
+        "type": "float", "unique": true}, "resource_uri": {"blank": false, "default":
+        "No default provided.", "help_text": "Unicode string data. Ex: \"Hello World\"",
+        "nullable": false, "readonly": true, "type": "string", "unique": false}, "short_name":
+        {"blank": false, "default": "No default provided.", "help_text": "a short
+        name of the court", "nullable": false, "readonly": false, "type": "string",
+        "unique": false}, "start_date": {"blank": false, "default": "No default provided.",
+        "help_text": "the date the court was established, if known", "nullable": true,
+        "readonly": false, "type": "datetime", "unique": false}, "url": {"blank":
+        false, "default": "No default provided.", "help_text": "the homepage for each
+        court or the closest thing thereto", "nullable": false, "readonly": false,
+        "type": "string", "unique": false}}, "filtering": {"date_modified": ["exact",
+        "gte", "gt", "lte", "lt", "range", "year", "month", "day", "hour", "minute",
+        "second"], "end_date": ["exact", "gte", "gt", "lte", "lt", "range", "year",
+        "month", "day"], "full_name": 1, "has_scraper": 1, "id": ["exact"], "in_use":
+        1, "jurisdictions": 1, "position": ["exact", "gte", "gt", "lte", "lt", "range"],
+        "short_name": 1, "start_date": ["exact", "gte", "gt", "lte", "lt", "range",
+        "year", "month", "day"], "url": 1}, "ordering": ["date_modified", "start_date",
+        "end_date", "position", "jurisdiction"]}'
+    http_version: 
+  recorded_at: Thu, 09 Oct 2014 00:40:41 GMT
+recorded_with: VCR 2.9.2

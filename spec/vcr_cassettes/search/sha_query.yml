@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://spuiszis:password123%21@www.courtlistener.com/api/rest/v1/search/?format=json&q=a2daab35251795fc2621c6ac46b6031c95a4e0ba
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.courtlistener.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Oct 2014 00:40:07 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Expires:
+      - Thu, 09 Oct 2014 00:50:15 GMT
+      Vary:
+      - Accept
+      Cache-Control:
+      - no-cache, max-age=600
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      Last-Modified:
+      - Thu, 09 Oct 2014 00:40:15 GMT
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"meta": {"limit": 20, "next": null, "offset": 0, "previous": null,
+        "request_uri": "/api/rest/v1/search/?q=a2daab35251795fc2621c6ac46b6031c95a4e0ba&format=json",
+        "total_count": 1}, "objects": [{"absolute_url": "/ca1/2/us-v-davila-gonzalez/",
+        "case_name": "United States v. Davila-Gonzalez", "case_number": ", 08-2575
+        ", "citation": "", "cite_count": 4, "court": "Court of Appeals for the First
+        Circuit", "court_id": "ca1", "date_filed": "2010-02-10T00:00:00", "docket_number":
+        "08-2575 ", "download_url": "http://www.ca1.uscourts.gov/pdf.opinions/08-2575P-01A.pdf",
+        "id": "1", "judge": "", "local_path": "pdf/2010/02/10/US_v._Davila-Gonzalez.pdf",
+        "resource_uri": "/api/rest/v1/opinion/1/", "score": 2.9016924e-08, "snippet":
+        "States v. Davila-Gonzalez\nPublished\n<mark>a2daab35251795fc2621c6ac46b6031c95a4e0ba</mark>\nCourt
+        of Appeals for the First", "source": "C", "status": "Precedential", "suit_nature":
+        "", "timestamp": "2014-08-03T21:18:59.658000"}]}'
+    http_version: 
+  recorded_at: Thu, 09 Oct 2014 00:40:32 GMT
+recorded_with: VCR 2.9.2

@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://spuiszis:password123%21@www.courtlistener.com/api/rest/v1/citation/schema/?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.courtlistener.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Oct 2014 00:40:19 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Expires:
+      - Thu, 09 Oct 2014 00:50:19 GMT
+      Vary:
+      - Accept
+      Cache-Control:
+      - no-cache, max-age=600
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      Last-Modified:
+      - Thu, 09 Oct 2014 00:40:19 GMT
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"allowed_detail_http_methods": ["get", "post", "put", "delete", "patch"],
+        "allowed_list_http_methods": ["get", "post", "put", "delete", "patch"], "default_format":
+        "application/json", "default_limit": 20, "fields": {"case_name": {"blank":
+        true, "default": "", "help_text": "The full name of the case", "nullable":
+        false, "readonly": false, "type": "string", "unique": false}, "docket_number":
+        {"blank": false, "default": "No default provided.", "help_text": "The docket
+        numbers of a case, can be consolidated and quite long", "nullable": true,
+        "readonly": false, "type": "string", "unique": false}, "federal_cite_one":
+        {"blank": false, "default": "No default provided.", "help_text": "Primary
+        federal citation", "nullable": true, "readonly": false, "type": "string",
+        "unique": false}, "federal_cite_three": {"blank": false, "default": "No default
+        provided.", "help_text": "Tertiary federal citation", "nullable": true, "readonly":
+        false, "type": "string", "unique": false}, "federal_cite_two": {"blank": false,
+        "default": "No default provided.", "help_text": "Secondary federal citation",
+        "nullable": true, "readonly": false, "type": "string", "unique": false}, "id":
+        {"blank": true, "default": "", "help_text": "Integer data. Ex: 2673", "nullable":
+        false, "readonly": false, "type": "integer", "unique": true}, "lexis_cite":
+        {"blank": false, "default": "No default provided.", "help_text": "Lexis Nexus
+        citation (e.g. 1 LEXIS 38237)", "nullable": true, "readonly": false, "type":
+        "string", "unique": false}, "neutral_cite": {"blank": false, "default": "No
+        default provided.", "help_text": "Neutral citation", "nullable": true, "readonly":
+        false, "type": "string", "unique": false}, "opinion_uris": {"blank": false,
+        "default": "No default provided.", "help_text": "Many related resources. Can
+        be either a list of URIs or list of individually nested resource data.", "nullable":
+        false, "readonly": false, "related_type": "to_many", "type": "related", "unique":
+        false}, "resource_uri": {"blank": false, "default": "No default provided.",
+        "help_text": "Unicode string data. Ex: \"Hello World\"", "nullable": false,
+        "readonly": true, "type": "string", "unique": false}, "scotus_early_cite":
+        {"blank": false, "default": "No default provided.", "help_text": "Early SCOTUS
+        citation such as How., Black, Cranch., etc.", "nullable": true, "readonly":
+        false, "type": "string", "unique": false}, "specialty_cite_one": {"blank":
+        false, "default": "No default provided.", "help_text": "Specialty citation",
+        "nullable": true, "readonly": false, "type": "string", "unique": false}, "state_cite_one":
+        {"blank": false, "default": "No default provided.", "help_text": "Primary
+        state citation", "nullable": true, "readonly": false, "type": "string", "unique":
+        false}, "state_cite_regional": {"blank": false, "default": "No default provided.",
+        "help_text": "Regional citation", "nullable": true, "readonly": false, "type":
+        "string", "unique": false}, "state_cite_three": {"blank": false, "default":
+        "No default provided.", "help_text": "Tertiary state citation", "nullable":
+        true, "readonly": false, "type": "string", "unique": false}, "state_cite_two":
+        {"blank": false, "default": "No default provided.", "help_text": "Secondary
+        state citation", "nullable": true, "readonly": false, "type": "string", "unique":
+        false}, "westlaw_cite": {"blank": false, "default": "No default provided.",
+        "help_text": "WestLaw citation (e.g. 22 WL 238)", "nullable": true, "readonly":
+        false, "type": "string", "unique": false}}}'
+    http_version: 
+  recorded_at: Thu, 09 Oct 2014 00:40:36 GMT
+recorded_with: VCR 2.9.2

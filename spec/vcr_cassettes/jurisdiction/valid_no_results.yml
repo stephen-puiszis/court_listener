@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://spuiszis:password123%21@www.courtlistener.com/api/rest/v1/jurisdiction/set/abc/?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.courtlistener.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Oct 2014 00:40:02 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Expires:
+      - Thu, 09 Oct 2014 00:50:02 GMT
+      Vary:
+      - Accept
+      Cache-Control:
+      - no-cache, max-age=600
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      Last-Modified:
+      - Thu, 09 Oct 2014 00:40:02 GMT
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"not_found": ["abc"], "objects": []}'
+    http_version: 
+  recorded_at: Thu, 09 Oct 2014 00:40:20 GMT
+recorded_with: VCR 2.9.2

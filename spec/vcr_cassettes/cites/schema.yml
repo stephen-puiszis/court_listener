@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://spuiszis:password123%21@www.courtlistener.com/api/rest/v1/cites/schema/?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.courtlistener.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Oct 2014 00:40:22 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Expires:
+      - Thu, 09 Oct 2014 00:50:22 GMT
+      Vary:
+      - Accept
+      Cache-Control:
+      - no-cache, max-age=600
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      Last-Modified:
+      - Thu, 09 Oct 2014 00:40:22 GMT
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"allowed_detail_http_methods": [], "allowed_list_http_methods": ["get"],
+        "default_format": "application/json", "default_limit": 20, "fields": {"absolute_url":
+        {"blank": false, "default": "No default provided.", "help_text": "Unicode
+        string data. Ex: \"Hello World\"", "nullable": false, "readonly": true, "type":
+        "string", "unique": false}, "blocked": {"blank": true, "default": false, "help_text":
+        "Whether a document should be blocked from indexing by search engines", "nullable":
+        false, "readonly": false, "type": "boolean", "unique": false}, "citation":
+        {"blank": false, "default": "No default provided.", "help_text": "A single
+        related resource. Can be either a URI or set of nested resource data.", "nullable":
+        false, "readonly": false, "related_type": "to_one", "type": "related", "unique":
+        false}, "citation_count": {"blank": false, "default": 0, "help_text": "The
+        number of times this document is cited by other cases", "nullable": false,
+        "readonly": false, "type": "integer", "unique": false}, "court": {"blank":
+        false, "default": "No default provided.", "help_text": "A single related resource.
+        Can be either a URI or set of nested resource data.", "nullable": false, "readonly":
+        false, "related_type": "to_one", "type": "related", "unique": false}, "date_blocked":
+        {"blank": false, "default": "No default provided.", "help_text": "The date
+        that this opinion was blocked from indexing by search engines", "nullable":
+        true, "readonly": false, "type": "datetime", "unique": false}, "date_filed":
+        {"blank": false, "default": "No default provided.", "help_text": "The date
+        filed by the court", "nullable": true, "readonly": false, "type": "datetime",
+        "unique": false}, "date_modified": {"blank": false, "default": "1750-01-01T00:00:00Z",
+        "help_text": "The last moment when the item was modified. A value  in year
+        1750 indicates the value is unknown", "nullable": true, "readonly": false,
+        "type": "datetime", "unique": false}, "download_url": {"blank": false, "default":
+        "No default provided.", "help_text": "The URL on the court website where the
+        document was originally scraped", "nullable": true, "readonly": false, "type":
+        "string", "unique": false}, "extracted_by_ocr": {"blank": true, "default":
+        false, "help_text": "Whether OCR was used to get this document content", "nullable":
+        false, "readonly": false, "type": "boolean", "unique": false}, "id": {"blank":
+        true, "default": "", "help_text": "Integer data. Ex: 2673", "nullable": false,
+        "readonly": false, "type": "integer", "unique": true}, "judges": {"blank":
+        false, "default": "", "help_text": "The judges that brought the opinion as
+        a simple text string", "nullable": true, "readonly": false, "type": "string",
+        "unique": false}, "local_path": {"blank": true, "default": "", "help_text":
+        "The location, relative to MEDIA_ROOT on the CourtListener server, where files
+        are stored", "nullable": false, "readonly": false, "type": "string", "unique":
+        false}, "nature_of_suit": {"blank": true, "default": "", "help_text": "The
+        nature of the suit. For the moment can be codes or laws or whatever", "nullable":
+        false, "readonly": false, "type": "string", "unique": false}, "precedential_status":
+        {"blank": true, "default": "", "help_text": "The precedential status of document,
+        one of: Published, Unpublished, Errata, Memorandum Decision, Per Curiam Opinion,
+        Separate, Signed Opinion, In-chambers, Relating-to, Unknown", "nullable":
+        false, "readonly": false, "type": "string", "unique": false}, "resource_uri":
+        {"blank": false, "default": "No default provided.", "help_text": "Unicode
+        string data. Ex: \"Hello World\"", "nullable": false, "readonly": true, "type":
+        "string", "unique": false}, "sha1": {"blank": false, "default": "No default
+        provided.", "help_text": "unique ID for the document, as generated via SHA1
+        of the binary file or text data", "nullable": false, "readonly": false, "type":
+        "string", "unique": false}, "source": {"blank": true, "default": "", "help_text":
+        "the source of the document, one of: C (court website), R (resource.org),
+        CR (court website merged with resource.org), L (lawbox), LC (lawbox merged
+        with court), LR (lawbox merged with resource.org), LCR (lawbox merged with
+        court and resource.org), M (manual input), A (internet archive)", "nullable":
+        false, "readonly": false, "type": "string", "unique": false}, "time_retrieved":
+        {"blank": true, "default": true, "help_text": "The original creation date
+        for the item", "nullable": false, "readonly": false, "type": "datetime", "unique":
+        false}}, "filtering": {"id": ["exact"]}}'
+    http_version: 
+  recorded_at: Thu, 09 Oct 2014 00:40:40 GMT
+recorded_with: VCR 2.9.2
