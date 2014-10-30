@@ -2,9 +2,10 @@ module CourtListener
   module Jurisdiction
 
     ENDPOINT = "jurisdiction/".freeze
+    TOTAL_JURISDICTIONS = 355.freeze
 
     def self.all(params = {})
-      params[:limit] ||= "355"
+      params[:limit] ||= TOTAL_JURISDICTIONS
       CourtListener::Request.new(ENDPOINT, params)
     end
 
